@@ -5,21 +5,16 @@
 import asyncio
 import logging
 import os
-import re
 import subprocess
 import time
 from datetime import datetime
-
-import telethon
 
 from telethon.tl.types import DocumentAttributeVideo
 
 from hachoir.metadata import extractMetadata
 from hachoir.parser import createParser
-
-from PIL import Image
 from sample_config import Config
-from uniborg.util import admin_cmd, humanbytes, progress, time_formatter
+from uniborg.util import admin_cmd, progress
 
 logging.basicConfig(format='[%(levelname) 5s/%(asctime)s] %(name)s: %(message)s',
                     level=logging.WARNING)
